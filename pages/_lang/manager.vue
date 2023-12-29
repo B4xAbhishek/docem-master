@@ -59,18 +59,18 @@
                   <span v-else-if="selected === 13">{{
                     $t('province.yt')
                   }}</span>
-                  <span v-else>{{ $t('province.choose') }}</span>
+                  <!-- <span v-else>{{ $t('province.choose') }}</span> -->
                 </h3>
               </div>
               <div class="promobox-group-btn">
-                <select v-model="selected" class="form-control mb-0">
+                <!-- <select v-model="selected" class="form-control mb-0">
                   <option
                     v-for="option in options"
                     :key="option.value"
                     :value="option.id"
                     >{{ option.province }}</option
                   >
-                </select>
+                </select> -->
               </div>
             </div>
           </div>
@@ -78,7 +78,10 @@
       </div>
     </section>
 
-    <!-- Features -->
+    <!-- Video Section -->
+    <VideoSection></VideoSection>
+
+    <!-- Managers Features -->
     <section class="flat-row background-color">
       <div class="container">
         <div class="row">
@@ -274,12 +277,14 @@ import PageTitle from '~/components/PageTitle.vue'
 import Testimonials from '~/components/Testimonials.vue'
 import Promobox from '~/components/Promobox.vue'
 import Rfp from '~/components/Rfp.vue'
+import VideoSection from '~/components/VideoSection.vue'
 
 export default {
   components: {
     PageTitle,
     Promobox,
     Testimonials,
+    VideoSection,
     Rfp,
   },
   data() {
