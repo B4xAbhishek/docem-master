@@ -1,0 +1,324 @@
+/**
+  * Name: Docem.ca
+  * Version: 1.0
+*/
+
+$color-theme: #00aeff;
+
+html {
+  background: #273039;
+}
+
+// PAGE/ROUTE TRANSITIONS
+.page-enter-active,
+.page-leave-active {
+  transition: opacity .5s
+}
+
+.page-enter,
+.page-leave-active {
+  opacity: 0
+}
+
+// TOP
+.topinfo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flat-language {
+  &>ul {
+    margin-right: 10px;
+  }
+
+  li {
+    position: relative;
+  }
+
+  &>ul>li>ul {
+    right: auto;
+    left: 0;
+
+
+    &.province {
+      width: 250px;
+      right: 0;
+      left: auto;
+      top: 36px;
+      margin-top: 0;
+
+      a {
+        background: transparent;
+        font-weight: normal;
+      }
+    }
+  }
+}
+
+.flat-language,
+.flat-information,
+.flat-analysis {
+  width: auto;
+  display: flex;
+}
+
+.flat-information {
+  padding: 0;
+
+  li.email {
+    margin-right: 0;
+  }
+}
+
+.flat-analysis {
+  .flat-language {
+    padding-left: 0;
+
+    &:before {
+      display: none;
+    }
+  }
+
+  .login {
+    display: block;
+    background: rgb(53, 66, 79);
+    color: #fff;
+    padding: 11px 20px 11px 18px;
+    font-size: 12px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .topinfo {
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .flat-language {
+    &:before {
+      left: 0;
+      margin: 0;
+    }
+  }
+
+  .flat-information,
+  .flat-analysis {
+    display: none;
+  }
+}
+
+// NAVIGATION
+#mainnav>ul>li>a.nuxt-link-exact-active {
+  color: $color-theme;
+  position: relative;
+
+  &:after {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+#mainnav>ul>li>a {
+  margin: 0 15px;
+}
+
+// SLIDER
+.tp-banner {
+  display: none;
+}
+
+// PARALLAX
+.parallax {
+  background-position: center center;
+
+  .overlay {
+    display: none;
+  }
+}
+
+.parallax1 {
+  background-image: url('~assets/images/parallax/slide1.jpg');
+}
+
+.parallax2 {
+  background-image: url('~assets/images/parallax/slide2.jpg');
+}
+
+.parallax3 {
+  background-image: url('~assets/images/parallax/slide3.jpg');
+}
+
+.parallax4 {
+  background-image: url('~assets/images/slides/slide2.jpg');
+}
+
+.parallax5 {
+  background-image: url('~assets/images/slides/slide5.jpg');
+}
+
+.parallax6 {
+  background-image: url('~assets/images/parallax/slide6.jpg');
+}
+
+.parallax7 {
+  background-image: url('~assets/images/parallax/slide7.jpg');
+}
+
+// ACCORDION
+.imgaes-single-accordion {
+  background: url('~assets/images/bg3.jpg') no-repeat;
+}
+
+// RFP
+.row-getaudit {
+  label {
+    color: #8da1b6;
+  }
+
+  input {
+    border: 1px solid #fff;
+    background-color: #243444;
+    border-color: #243444;
+  }
+}
+
+.rfp-alt {
+  margin-left: 0;
+}
+
+// SUBTITLES
+.title-section .sub-title {
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 991px) {
+  .title-section .sub-title {
+    max-width: none;
+    margin: 0;
+  }
+}
+
+// .row-getaudit .sub-title {
+//   max-width: 60%;
+//   margin: 0 auto;
+// }
+
+// FEATURES
+.iconbox {
+  .box-header {
+    &.center {
+      text-align: center;
+    }
+  }
+
+  .box-content {
+    .flat-list {
+      text-align: left;
+    }
+  }
+}
+
+.iconbox.circle .box-header i {
+  font-size: 30px;
+  width: 60px;
+  height: 60px;
+  line-height: 50px;
+}
+
+// CONTACT
+.flat-contact-info {
+  background: transparent;
+}
+
+.flat-on-four-last {
+  .flat-contact-info {
+    border-right: 0;
+  }
+}
+
+// FOOTER
+.footer-widgets .widget-brand {
+  border-bottom: 0;
+}
+
+.footer-widgets .widget-brand p {
+  font-size: 12px;
+}
+
+// LABEL
+.label.label-theme {
+  background: $color-theme;
+}
+
+// TESTIMONIALS
+.owl-nav.disabled {
+  display: none;
+}
+
+.owl-carousel {
+  display: block;
+}
+
+// REUSABLES
+.background-white {
+  background: #fff !important;
+}
+
+.background-light {
+  background: #f5f5f5 !important;
+}
+
+.color-white {
+  color: #fff !important;
+}
+
+.color-theme {
+  color: $color-theme !important;
+}
+
+.color-label {
+  color: #8da1b6 !important;
+}
+
+.px-15 {
+  padding: 0 15px !important;
+}
+
+.p-15 {
+  padding: 15px !important;
+}
+
+.pt-15 {
+  padding: 15px 0 0 !important;
+}
+
+.pb-15 {
+  padding: 0 0 15px !important;
+}
+
+.mr-10 {
+  margin-right: 10px !important;
+}
+
+.mt-15 {
+  margin-top: 15px !important;
+}
+
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+.mb-15 {
+  margin-bottom: 15px !important;
+}
+
+.flat-row.background-color {
+  background-color: #f5f5f5;
+}

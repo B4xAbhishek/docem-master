@@ -1,0 +1,298 @@
+/**
+  * Name: Docem.ca
+  * Version: 1.0
+*/
+html {
+  background: #273039;
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.5s;
+}
+
+.page-enter,
+.page-leave-active {
+  opacity: 0;
+}
+
+.topinfo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flat-language > ul {
+  margin-right: 10px;
+}
+.flat-language li {
+  position: relative;
+}
+.flat-language > ul > li > ul {
+  right: auto;
+  left: 0;
+}
+.flat-language > ul > li > ul.province {
+  width: 250px;
+  right: 0;
+  left: auto;
+  top: 36px;
+  margin-top: 0;
+}
+.flat-language > ul > li > ul.province a {
+  background: transparent;
+  font-weight: normal;
+}
+
+.flat-language,
+.flat-information,
+.flat-analysis {
+  width: auto;
+  display: flex;
+}
+
+.flat-information {
+  padding: 0;
+}
+.flat-information li.email {
+  margin-right: 0;
+}
+
+.flat-analysis .flat-language {
+  padding-left: 0;
+}
+.flat-analysis .flat-language:before {
+  display: none;
+}
+.flat-analysis .login {
+  display: block;
+  background: rgb(53, 66, 79);
+  color: #fff;
+  padding: 11px 20px 11px 18px;
+  font-size: 12px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 991px) {
+  .topinfo {
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+  }
+  .flat-language:before {
+    left: 0;
+    margin: 0;
+  }
+  .flat-information,
+  .flat-analysis {
+    display: none;
+  }
+}
+#mainnav > ul > li > a.nuxt-link-exact-active {
+  color: #00aeff;
+  position: relative;
+}
+#mainnav > ul > li > a.nuxt-link-exact-active:after {
+  width: 100%;
+  opacity: 1;
+}
+
+#mainnav > ul > li > a {
+  margin: 0 15px;
+}
+
+.tp-banner {
+  display: none;
+}
+
+.parallax {
+  background-position: center center;
+}
+.parallax .overlay {
+  display: none;
+}
+
+.parallax1 {
+  background-image: url("~assets/images/parallax/slide1.jpg");
+}
+
+.parallax2 {
+  background-image: url("~assets/images/parallax/slide2.jpg");
+}
+
+.parallax3 {
+  background-image: url("~assets/images/parallax/slide3.jpg");
+}
+
+.parallax4 {
+  background-image: url("~assets/images/slides/slide2.jpg");
+}
+
+.parallax5 {
+  background-image: url("~assets/images/slides/slide5.jpg");
+}
+
+.parallax6 {
+  background-image: url("~assets/images/parallax/slide6.jpg");
+}
+
+.parallax7 {
+  background-image: url("~assets/images/parallax/slide7.jpg");
+}
+
+.imgaes-single-accordion {
+  background: url("~assets/images/bg3.jpg") no-repeat;
+}
+
+.row-getaudit label {
+  color: #8da1b6;
+}
+.row-getaudit input {
+  border: 1px solid #fff;
+  background-color: #243444;
+  border-color: #243444;
+}
+
+.rfp-alt {
+  margin-left: 0;
+}
+
+.title-section .sub-title {
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 991px) {
+  .title-section .sub-title {
+    max-width: none;
+    margin: 0;
+  }
+}
+.iconbox .box-header.center {
+  text-align: center;
+}
+.iconbox .box-content .flat-list {
+  text-align: left;
+}
+
+.iconbox.circle .box-header i {
+  font-size: 30px;
+  width: 60px;
+  height: 60px;
+  line-height: 50px;
+}
+
+.flat-contact-info {
+  background: transparent;
+}
+
+.flat-on-four-last .flat-contact-info {
+  border-right: 0;
+}
+
+.footer-widgets .widget-brand {
+  border-bottom: 0;
+}
+
+.footer-widgets .widget-brand p {
+  font-size: 12px;
+}
+
+.label.label-theme {
+  background: #00aeff;
+}
+
+.owl-nav.disabled {
+  display: none;
+}
+
+.owl-carousel {
+  display: block;
+}
+
+.background-white {
+  background: #fff !important;
+}
+
+.background-light {
+  background: #f5f5f5 !important;
+}
+
+.color-white {
+  color: #fff !important;
+}
+
+.color-theme {
+  color: #00aeff !important;
+}
+
+.color-label {
+  color: #8da1b6 !important;
+}
+
+.px-15 {
+  padding: 0 15px !important;
+}
+
+.p-15 {
+  padding: 15px !important;
+}
+
+.pt-15 {
+  padding: 15px 0 0 !important;
+}
+
+.pb-15 {
+  padding: 0 0 15px !important;
+}
+
+.mr-10 {
+  margin-right: 10px !important;
+}
+
+.mt-15 {
+  margin-top: 15px !important;
+}
+
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+.mb-15 {
+  margin-bottom: 15px !important;
+}
+
+.flat-row.background-color {
+  background-color: #f5f5f5;
+}/*# sourceMappingURL=style.css.map */
+
+.iconbox.center{
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 12px;
+    background-color: white;
+}
+.flat-button{
+  text-transform: capitalize;
+  padding: 7px 20px 9px 20px;
+  background: #00AEFF;
+  color: #fff;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 5px auto 10px auto;
+  display: block;
+  width: fit-content;
+  text-decoration: none;
+  font-family: Poppins-Regular;
+  transition: all ease .238s;
+  border: 1px solid #00aeff;
+}
+.flat-button:hover {
+  color: #00aeff;
+  text-decoration: none;
+  background: white;
+  border: 1px solid #00aeff;
+}
