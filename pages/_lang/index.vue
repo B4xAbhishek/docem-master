@@ -223,10 +223,10 @@
                 data-start="2500"
                 data-easing="Power3.easeInOut"
               >
-                <NuxtLink :to="localePath('landlord')">
+                <!-- <NuxtLink :to="localePath('landlord')">
                   {{ $t('links.learnMore') }}
                 </NuxtLink>
-                &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-right"></i>
+                &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-right"></i> -->
               </div>
             </li>
           </ul>
@@ -250,7 +250,7 @@
         </div>
 
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-md-4">
             <div class="iconbox center circle large">
               <div class="box-header">
                 <!-- <img src="~assets/images/icon/icon4.svg" alt="icon" /> -->
@@ -278,7 +278,7 @@
           </div>
           <!-- /.col-md-3 -->
 
-          <div class="col-md-3">
+          <div class="col-md-4">
             <div class="iconbox center circle large">
               <div class="box-header">
                 <!-- <img src="~assets/images/icon/icon7.svg" alt="icon" /> -->
@@ -306,7 +306,7 @@
           </div>
           <!-- /.col-md-3 -->
 
-          <div class="col-md-3">
+          <div class="col-md-4">
             <div class="iconbox center circle large">
               <div class="box-header">
                 <!-- <img src="~assets/images/icon/icon8.svg" alt="icon" /> -->
@@ -334,10 +334,9 @@
           </div>
           <!-- /.col-md-3 -->
 
-          <div class="col-md-3">
+          <!-- <div class="col-md-3">
             <div class="iconbox center circle large">
               <div class="box-header">
-                <!-- <img src="~assets/images/icon/icon2.svg" alt="icon" /> -->
                 <div><i class="fa fa-home"></i></div>
                 <div class="box-title">
                   <NuxtLink :to="localePath('landlord')">
@@ -358,8 +357,7 @@
                 </div>
               </div>
             </div>
-            <!-- /.iconbox -->
-          </div>
+          </div> -->
           <!-- /.col-md-3 -->
         </div>
       </div>

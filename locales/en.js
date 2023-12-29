@@ -23,7 +23,7 @@ export default {
     association_boards: 'Association & Boards',
     products: 'Products',
     agent: 'Agent',
-    manager: 'Property Manager',
+    manager: 'Property Manager & Landlord',
     landlord: 'Landlord',
     about: 'About',
     contact: 'Contact',
@@ -59,8 +59,8 @@ export default {
       desc: 'Spend your time selling and chasing more leads, less paper.',
     },
     slide4: {
-      title: 'for Property Managers',
-      desc: 'A simple way to manage and collect faster.',
+      title: 'for Property Managers & landlords',
+      desc: 'A simple way to manage and collect faster. Better screening, chase less and collect smarter.',
     },
     slide5: {
       title: 'for Landlords',
@@ -79,7 +79,7 @@ export default {
     subTitle: 'Select a platform to learn more.',
     brokerageDesc: 'A paperless solution for day-to-day business operations.',
     agentDesc: 'Spend your time selling and chasing more leads, less paper.',
-    managerDesc: 'A simple way to manage and collect faster.',
+    managerDesc: 'A simple way to manage and collect faster. Better screening, chase less and collect smarter.',
     landlordDesc: 'Better screening, chase less and collect smarter.',
   },
   benefits: {
@@ -302,7 +302,7 @@ export default {
       },
     },
     manager: {
-      title: `Property Manager's Solution`,
+      title: `Property Manager's & landlord's Solution`,
       subTitle:
         'A safe way to manage the property records of your landlords, share occupancy terms with your tenants, keep track of service requests and facilitate the collection of monthly rent.',
       box1: {

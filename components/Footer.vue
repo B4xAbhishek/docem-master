@@ -43,11 +43,11 @@
                     {{ $t('links.manager') }}
                   </NuxtLink>
                 </li>
-                <li>
+                <!-- <li>
                   <NuxtLink :to="localePath('landlord')">
                     {{ $t('links.landlord') }}
                   </NuxtLink>
-                </li>
+                </li> -->
                 <li>
                   <NuxtLink :to="localePath('contact-us')">
                     {{ $t('links.contact') }}
